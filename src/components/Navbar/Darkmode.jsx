@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import lightButton from "../../assets/website/lightButton.png";
-import darkButton from "../../assets/website/darkButton.png";
+import darkButton from "../../assets/button/darkButton.png";
 
 export const Darkmode = () => {
   const [theme, setTheme] = useState(
