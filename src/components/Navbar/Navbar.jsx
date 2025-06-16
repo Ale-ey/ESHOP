@@ -1,8 +1,8 @@
 import React from "react";
 import "./Navbar.css";
-import { IoMdSearch } from "react-icons/io";
 import { FaCaretDown, FaCartShopping } from "react-icons/fa6";
 import { Darkmode } from "./Darkmode";
+import { IoIosSearch } from "react-icons/io";
 
 const menuLink = [
   {
@@ -47,7 +47,7 @@ export const Navbar = () => {
   return (
     <div className="bg-white dark:bg-gray-900 dark:text-white z-40  w-full">
       <div className="p-2 ">
-        <div className="container flex justify-between items-center m-auto"> 
+        <div className="container flex justify-between items-center m-auto">
           <div className="flex items-center gap-5 ">
             {/* logo and links section */}
             <a
@@ -108,7 +108,7 @@ export const Navbar = () => {
                 placeholder="Search"
                 className="search-bar  group-hover:border-gray-500 px-3 py-1 dark:border-gray-800 dark:bg-gray-900 group-hover:dark:bg-gray-800"
               />
-              <IoMdSearch className="text-xl  text-gray-600 dark:text-gray-600 absolute top-1/2 -translate-y-1/2 right-3 group-hover:text-primary " />
+              <IoIosSearch className="text-xl  text-gray-600 dark:text-gray-600 absolute top-1/2 -translate-y-1/2 right-3 group-hover:text-primary " />
             </div>
 
             {/* order button  */}
