@@ -2,7 +2,7 @@ import React from "react";
 import "./Navbar.css";
 import { FaCaretDown, FaCartShopping } from "react-icons/fa6";
 import { Darkmode } from "./Darkmode";
-import { IoIosSearch } from "react-icons/io";
+import { FiSearch } from "react-icons/fi";
 
 const menuLink = [
   {
@@ -108,7 +108,8 @@ export const Navbar = () => {
                 placeholder="Search"
                 className="search-bar  group-hover:border-gray-500 px-3 py-1 dark:border-gray-800 dark:bg-gray-900 group-hover:dark:bg-gray-800"
               />
-              <IoIosSearch className="text-xl  text-gray-600 dark:text-gray-600 absolute top-1/2 -translate-y-1/2 right-3 group-hover:text-primary " />
+
+              <FiSearch className="text-xl  text-gray-600 dark:text-gray-600 absolute top-1/2 -translate-y-1/2 right-3 group-hover:text-primary " />
             </div>
 
             {/* order button  */}
