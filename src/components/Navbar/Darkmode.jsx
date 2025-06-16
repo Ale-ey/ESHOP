@@ -1,0 +1,44 @@
+import { useState, useEffect } from "react";
+import lightButton from "../../assets/website/lightButton.png";
+import darkButton from "../../assets/website/darkButton.png";
+
+export const Darkmode = () => {
+  const [theme, setTheme] = useState(
+    localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
+  );
+
+  const element = document.documentElement;
+
+  const handleToggle = () => {
+    setTheme(theme === "dark" ? "light" : "dark");
+  };
+  useEffect(() => {
+    localStorage.setItem("theme", theme);
+    if (theme === "dark") {
+      element.classList.add("dark");
+    } else {
+      element.classList.remove("dark");
+    }
+  });
+
+  return (
+    <div>
+      <img
+        onClick={handleToggle}
+        src={lightButton}
+        alt=""
+        className={`w-12 absolute cursor-pointer ${
+          theme === "dark" ? "opacity-0" : "opacity-100"
+        } duration-300 transition-all`}
+      />
+      <img
+        onClick={handleToggle}
+        src={darkButton}
+        alt=""
+        className={`w-12 cursor-pointer ${
+          theme === "light" ? "opacity-0" : "opacity-100"
+        } duration-300 transition-all`}
+      />
+    </div>
+  );
+};
