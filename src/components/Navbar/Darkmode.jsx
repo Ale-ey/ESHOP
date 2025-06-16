@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import lightButton from "../../assets/button/lightButton.png";
-import darkButton from "../../assets/button/darkButton.png";
+import black from "../../assets/button/black.png";
 
 export const Darkmode = () => {
   const [theme, setTheme] = useState(
@@ -33,7 +33,7 @@ export const Darkmode = () => {
       />
       <img
         onClick={handleToggle}
-        src={darkButton}
+        src={black}
         alt=""
         className={`w-12 cursor-pointer ${
           theme === "light" ? "opacity-0" : "opacity-100"
