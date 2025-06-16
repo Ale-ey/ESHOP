@@ -2,7 +2,7 @@ import React from "react";
 import "./Navbar.css";
 import { FaCaretDown, FaCartShopping } from "react-icons/fa6";
 import { Darkmode } from "./Darkmode";
-import { IoIosSearch } from "react-icons/io"; // Changed this line back to the correct format
+import { IoIosSearch } from "react-icons/io";
 
 const menuLink = [
   {
