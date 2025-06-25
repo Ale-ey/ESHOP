@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 import { FaCaretDown, FaCartShopping } from "react-icons/fa6";
 import { Darkmode } from "./Darkmode";
