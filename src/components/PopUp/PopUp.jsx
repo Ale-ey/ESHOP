@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { IoMdClose } from "react-icons/io";
-
+import { X } from "lucide-react";
 export const PopUp = ({ orderPopup, setorderPopup }) => {
   const [formData, setFormData] = useState({
     name: "",
@@ -29,7 +28,7 @@ export const PopUp = ({ orderPopup, setorderPopup }) => {
             {/* Header */}
             <div className="flex items-center justify-between mb-4">
               <h1 className="text-lg font-semibold">Order Now</h1>
-              <IoMdClose
+              <X
                 onClick={() => setorderPopup(false)}
                 className="text-2xl cursor-pointer hover:text-red-600"
               />
