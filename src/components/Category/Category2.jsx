@@ -5,9 +5,9 @@ import vr from "../../assets/category/vr.png";
 
 import speaker from "../../assets/category/speaker.png";
 
-export const Category2 = () => {
+export const Category2 = ({handleorderPopup}) => {
   return (
-    <div className="py-2">
+    <div className="py-2 px-4">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* first col  */}
@@ -20,6 +20,7 @@ export const Category2 = () => {
                   CONSOLE
                 </p>
                 <Button
+                  handler={handleorderPopup}
                   text={"Browse"}
                   bgColor={"bg-primary"}
                   textColor={"text-white"}
@@ -44,6 +45,7 @@ export const Category2 = () => {
                 </p>
                 <div className="z-10 relative">
                   <Button
+                    handler={handleorderPopup}
                     text={"Browse"}
                     bgColor={"bg-white"}
                     textColor={"text-brandGreen"}
@@ -68,6 +70,7 @@ export const Category2 = () => {
                 </p>
                 <div className="z-10 relative">
                   <Button
+                    handler={handleorderPopup}
                     text={"Browse"}
                     bgColor={"bg-primary"}
                     textColor={"text-white"}

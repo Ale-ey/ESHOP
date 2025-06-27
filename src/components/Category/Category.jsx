@@ -5,10 +5,9 @@ import watch from "../../assets/category/watch.png";
 
 import macbook from "../../assets/category/macbook.png";
 
-
-export const Category = () => {
-  return ( 
-    <div className="py-8">
+export const Category = ({handleorderPopup}) => {
+  return (
+    <div className="py-8 px-4">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* first col  */}
@@ -22,6 +21,7 @@ export const Category = () => {
                 </p>
                 <div className="z-10 relative">
                   <Button
+                    handler={handleorderPopup}
                     text={"Browse"}
                     bgColor={"bg-primary"}
                     textColor={"text-white"}
@@ -45,6 +45,7 @@ export const Category = () => {
                   Gadget
                 </p>
                 <Button
+                  handler={handleorderPopup}
                   text={"Browse"}
                   bgColor={"bg-white"}
                   textColor={"text-brandYellow"}
@@ -67,6 +68,7 @@ export const Category = () => {
                   Laptop
                 </p>
                 <Button
+                  handler={handleorderPopup}
                   text={"Browse"}
                   bgColor={"bg-white"}
                   textColor={"text-primary"}
