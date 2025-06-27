@@ -43,9 +43,9 @@ const DropdownLinks = [
     link: "/#l",
   },
 ];
-export const Navbar = () => {
+export const Navbar = ({ handleorderPopup }) => {
   return (
-    <div className="bg-white dark:bg-gray-900 dark:text-white z-40  w-full">
+    <div className="bg-white dark:bg-gray-900 dark:text-white z-40 px-4 w-full">
       <div className="p-2 ">
         <div className="container flex justify-between items-center m-auto">
           <div className="flex items-center gap-5 ">
@@ -113,7 +113,10 @@ export const Navbar = () => {
             </div>
 
             {/* order button  */}
-            <button className="relative p-3">
+            <button
+              onClick={handleorderPopup}
+              className=" cursor-pointer relative p-3"
+            >
               <FaCartShopping className="text-xl text-gray-600 dark:text-gray-400" />
               <div className="bg-red-500 w-4 h-4 rounded-full text-white text-xs absolute top-0 right-0 flex items-center justify-center">
                 4

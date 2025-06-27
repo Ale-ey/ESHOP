@@ -67,17 +67,19 @@ const productsData = [
     price: "400",
     aosDelay: "40",
   },
-  
 ];
 
-export const Products = () => {
+export const Products = ({ handleorderPopup }) => {
   return (
     <>
-      <div className="container mx-auto">
+      <div className="container mx-auto px-4">
         {/* headersection  */}
         <Heading title="Our Products" subtitle="Explore Our Products"></Heading>
         {/* bodysection  */}
-        <ProductCard data={productsData}></ProductCard>
+        <ProductCard
+          data={productsData}
+          handleorderPopup={handleorderPopup}
+        ></ProductCard>
         {/* <img src={productsData[].img} alt="" /> */}
       </div>
     </>

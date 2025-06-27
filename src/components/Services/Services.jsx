@@ -39,7 +39,7 @@ const serviceData = [
 
 export const Services = () => {
   return (
-    <div className="container mx-auto pt-10 ">
+    <div className="container mx-auto pt-10 px-4 ">
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-4 justify-items-center">
         {serviceData.map((data) => (
           <div
