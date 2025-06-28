@@ -6,7 +6,10 @@ const quicklinks = ["About", "Contact", "FAQs", "Support"];
 
 export const Footer = () => {
   return (
-    <footer className="bg-gray-600/40 py-8 text-sm text-black/80 dark:text-white/80">
+    <footer
+      id="about"
+      className="bg-gray-600/40 py-8 text-sm text-black/80 dark:text-white/80"
+    >
       <div className="container mx-auto px-4 flex flex-col md:flex-row gap-8">
         {/* Column 1: Brand & Developer Info */}
         <div className="flex-1 space-y-2">
@@ -21,7 +24,7 @@ export const Footer = () => {
             <p>Ali Haider</p>
           </div>
           <a
-            href="https://www.linkedin.com/in/your-profile" // update with your profile
+            href="https://www.linkedin.com/in/ali-haider-0284b42a7/" // update with your profile
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 hover:font-semibold duration-200"
@@ -29,7 +32,9 @@ export const Footer = () => {
             <Linkedin className="w-5 h-5" />
             <p>Click here to visit profile</p>
           </a>
-          <p className="flex justify-start items-center gap-2">{<SiGmail />}Aleeyhaider986@gmail.com</p>
+          <p className="flex justify-start items-center gap-2">
+            {<SiGmail />}Aleeyhaider986@gmail.com
+          </p>
           <p className="text-justify">
             A Software Engineering student at SEECS, NUST. I'm passionate about
             web and Android development, UI/UX design, and Event Management.

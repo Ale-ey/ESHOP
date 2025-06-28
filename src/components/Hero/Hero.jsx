@@ -38,7 +38,7 @@ export const Hero = ({ handleorderPopup }) => {
     slidesToScroll: 1,
   };
   return (
-    <div className="container m-auto mt-3 sm:mt-5 xl:mt-7 px-4">
+    <div id="home" className="container m-auto mt-3 sm:mt-5 xl:mt-7 px-4">
       <div className="  rounded-3xl   bg-gradient-to-r from-gray-300/80 to-gray-100 dark:from-gray-900 dark:to-gray-800   flex justify-center items-center ">
         {/* Hero section  */}
         <div className="container  pb-8 sm:pb-0">

@@ -8,39 +8,39 @@ const menuLink = [
   {
     id: 1,
     name: "Home",
-    link: "/#",
+    link: "/#home",
   },
   {
     id: 2,
     name: "Shop",
-    link: "/#shop",
+    link: "/#category",
   },
   {
     id: 3,
-    name: "About",
-    link: "/#about",
+    name: "Blogs",
+    link: "/#blogs",
   },
   {
     id: 4,
-    name: "Blogs",
-    link: "/#blog",
+    name: "About",
+    link: "/#about",
   },
 ];
 const DropdownLinks = [
   {
     id: 1,
     name: "Trending Products",
-    link: "/#",
+    link: "/#trending",
   },
   {
     id: 2,
     name: "Best Selling",
-    link: "/#",
+    link: "/#bestsellings",
   },
   {
     id: 3,
     name: "Top Rated",
-    link: "/#l",
+    link: "/#",
   },
 ];
 export const Navbar = ({ handleorderPopup }) => {

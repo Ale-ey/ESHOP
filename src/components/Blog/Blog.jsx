@@ -32,7 +32,7 @@ const blogData = [
 export const Blog = () => {
   return (
     <>
-      <div className="container py-12 px-4 mx-auto">
+      <div id="blogs" className="container py-12 px-4 mx-auto">
         {/* header section  */}
         <Heading title={"Recent News"} subtitle={"Explore our Blogs"}></Heading>
 
